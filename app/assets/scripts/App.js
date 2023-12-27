@@ -5,10 +5,11 @@ import Modal from "./modules/Modal";
 import RevealOnscroll from "./modules/RevealOnScroll";
 import StickyHeader from "./modules/stickyHeader";
 
-let stickyHeader = new StickyHeader();
+new StickyHeader();
 new RevealOnscroll(document.querySelectorAll(".feature-item"), 75);
 new RevealOnscroll(document.querySelectorAll(".testimonial"), 50);
-let mobileMenu = new MobileMenu();
+new MobileMenu();
+let modal;
 
 document.querySelectorAll(".open-modal").forEach(el => {
     el.addEventListener("click", e => {
