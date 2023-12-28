@@ -4,7 +4,19 @@ import MobileMenu from "./modules/MobileMenu";
 import Modal from "./modules/Modal";
 import RevealOnscroll from "./modules/RevealOnScroll";
 import StickyHeader from "./modules/stickyHeader";
+import ClientArea from "./modules/ClientArea";
 
+//End React-tai holbootoi koduud baina
+import React from "react";
+import ReactDOM from "react-dom";
+
+//Uursdiin bichij ugsun React compontent-iig import hiih
+import MyReactComponent from "./modules/MyReactComponent";
+ReactDOM.render(
+    <MyReactComponent />,
+    document.querySelector("#my-react-example"))
+
+new ClientArea();
 new StickyHeader();
 new RevealOnscroll(document.querySelectorAll(".feature-item"), 75);
 new RevealOnscroll(document.querySelectorAll(".testimonial"), 50);
